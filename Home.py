@@ -50,4 +50,12 @@ with col1:
 
 with col2:
     st.markdown("#### 🧑‍💻서비스 개발 team🧑‍💻")
+    data2= ({
+                    '구성원': ['이영권', '김주호'],
+                    '특징01': ['수원 피플','서울 피플'],
+                    '특징02': ['ISTP','ENTJ'],
+                    '특징03': ['서울 취뽀 희망','서울 취뽀 희망']})
+    df2 = pd.DataFrame(data2)
+    st.dataframe(df2)
     st.write(f"**< 서비스 개발 목적 >**")
+    st.info("✔️ 사용자 선호도에 따른 맞춤형 AI 동네 추천 서비스 개발")
